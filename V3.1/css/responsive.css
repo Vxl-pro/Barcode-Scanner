@@ -1,0 +1,107 @@
+/* css/responsive.css */
+
+@media (max-width: 520px) {
+    .app-shell {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .scanner-card {
+        padding: 12px;
+    }
+
+    .scanner-viewport {
+        min-height: 320px;
+    }
+
+    .scanner-actions {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .scanner-actions button {
+        width: 100%;
+        min-height: 52px;
+    }
+
+    .latest-card,
+    .history-card,
+    .settings-section {
+        padding: 15px;
+    }
+
+    .platforms-grid {
+        gap: 8px;
+    }
+
+    .platform-card {
+        padding: 10px 12px;
+        gap: 8px;
+    }
+
+    .platform-icon-wrap {
+        width: 34px;
+        height: 34px;
+    }
+
+    .platform-meta strong {
+        font-size: 12px;
+    }
+
+    .platform-meta span {
+        font-size: 9px;
+    }
+
+    .scope-pill {
+        padding: 10px 12px;
+    }
+
+    .modal {
+        padding: 18px;
+        border-radius: 22px 22px 0 0;
+        max-height: 92vh;
+    }
+}
+
+@media (max-width: 360px) {
+    .scope-selector {
+        grid-template-columns: 1fr;
+    }
+
+    .platforms-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-actions {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 700px) {
+    .app-shell {
+        padding-top: calc(28px + var(--safe-top));
+    }
+
+    .scanner-viewport {
+        min-height: 420px;
+    }
+
+    .modal-backdrop {
+        place-items: center;
+    }
+
+    .modal {
+        border-radius: 26px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+}

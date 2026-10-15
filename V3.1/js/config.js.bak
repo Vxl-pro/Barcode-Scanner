@@ -1,0 +1,34 @@
+// js/config.js
+
+export const APP_CONFIG = Object.freeze({
+    storage: Object.freeze({
+        history: "barcode_dispatch_history_v1",
+        settings: "barcode_dispatch_settings_v1"
+    }),
+
+    defaults: Object.freeze({
+        whatsappNumber: "7510408784",
+        discordWebhook: "",
+        theme: "system"
+    }),
+
+    scanner: Object.freeze({
+        elementId: "reader",
+        fps: 12,
+        qrboxRatio: 0.72,
+        stabilityDelay: 400
+    }),
+
+    history: Object.freeze({
+        maxItems: 20
+    }),
+
+    dispatch: Object.freeze({
+        discordDelay: 300,
+        whatsappCountryCode: "964"
+    }),
+
+    pwa: Object.freeze({
+        cacheName: "barcode-dispatch-v1"
+    })
+});

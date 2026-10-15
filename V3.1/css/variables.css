@@ -1,0 +1,139 @@
+/* css/variables.css */
+
+:root {
+    color-scheme: dark;
+
+    --bg: #080a0f;
+    --bg-elevated: #0d1017;
+    --surface: rgba(20, 24, 34, 0.85);
+    --surface-solid: #11151e;
+    --surface-soft: rgba(255, 255, 255, 0.05);
+
+    --text: #f7f8fb;
+    --text-secondary: #a8afbd;
+    --text-muted: #6f7786;
+
+    --border: rgba(255, 255, 255, 0.09);
+    --border-strong: rgba(255, 255, 255, 0.16);
+
+    --accent: #4f8cff;
+    --accent-hover: #6b9eff;
+    --accent-soft: rgba(79, 140, 255, 0.14);
+
+    --success: #35d07f;
+    --success-soft: rgba(53, 208, 127, 0.14);
+
+    --danger: #ff5f67;
+    --danger-soft: rgba(255, 95, 103, 0.14);
+
+    --warning: #f59e0b;
+    --warning-soft: rgba(245, 158, 11, 0.15);
+
+    /* Platform Brand Colors */
+    --platform-whatsapp: #25d366;
+    --platform-whatsapp-soft: rgba(37, 211, 102, 0.14);
+    --platform-telegram: #229ed9;
+    --platform-telegram-soft: rgba(34, 158, 217, 0.14);
+    --platform-discord: #5865f2;
+    --platform-discord-soft: rgba(88, 101, 242, 0.15);
+    --platform-sms: #3b82f6;
+    --platform-sms-soft: rgba(59, 130, 246, 0.14);
+
+    --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 18px 50px rgba(0, 0, 0, 0.32);
+    --shadow-lg: 0 28px 90px rgba(0, 0, 0, 0.48);
+
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 22px;
+    --radius-xl: 28px;
+
+    --touch: 48px;
+
+    --ease: cubic-bezier(.22, .8, .24, 1);
+    --transition: 180ms var(--ease);
+
+    --max-width: 760px;
+
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+    --font-family: "Vazirmatn", "Noto Sans Arabic", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Tahoma, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+
+    --bg: #f4f6fa;
+    --bg-elevated: #ffffff;
+    --surface: rgba(255, 255, 255, 0.88);
+    --surface-solid: #ffffff;
+    --surface-soft: rgba(15, 23, 42, 0.045);
+
+    --text: #10131a;
+    --text-secondary: #596273;
+    --text-muted: #8a93a3;
+
+    --border: rgba(15, 23, 42, 0.08);
+    --border-strong: rgba(15, 23, 42, 0.15);
+
+    --accent: #276cff;
+    --accent-hover: #185be7;
+    --accent-soft: rgba(39, 108, 255, 0.1);
+
+    --success: #169b58;
+    --success-soft: rgba(22, 155, 88, 0.1);
+
+    --danger: #e43d48;
+    --danger-soft: rgba(228, 61, 72, 0.1);
+
+    --warning: #d97706;
+    --warning-soft: rgba(217, 119, 6, 0.12);
+
+    --platform-whatsapp: #128c7e;
+    --platform-whatsapp-soft: rgba(18, 140, 126, 0.12);
+    --platform-telegram: #0088cc;
+    --platform-telegram-soft: rgba(0, 136, 204, 0.12);
+    --platform-discord: #4752c4;
+    --platform-discord-soft: rgba(71, 82, 196, 0.12);
+    --platform-sms: #2563eb;
+    --platform-sms-soft: rgba(37, 99, 235, 0.12);
+
+    --shadow-sm: 0 8px 24px rgba(15, 23, 42, 0.07);
+    --shadow-md: 0 18px 50px rgba(15, 23, 42, 0.1);
+    --shadow-lg: 0 28px 90px rgba(15, 23, 42, 0.15);
+}
+
+:root[data-theme="system"] {
+    color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light) {
+    :root[data-theme="system"] {
+        --bg: #f4f6fa;
+        --bg-elevated: #ffffff;
+        --surface: rgba(255, 255, 255, 0.88);
+        --surface-solid: #ffffff;
+        --surface-soft: rgba(15, 23, 42, 0.045);
+
+        --text: #10131a;
+        --text-secondary: #596273;
+        --text-muted: #8a93a3;
+
+        --border: rgba(15, 23, 42, 0.08);
+        --border-strong: rgba(15, 23, 42, 0.15);
+
+        --accent: #276cff;
+        --accent-hover: #185be7;
+        --accent-soft: rgba(39, 108, 255, 0.1);
+
+        --success: #169b58;
+        --danger: #e43d48;
+        --warning: #d97706;
+
+        --shadow-sm: 0 8px 24px rgba(15, 23, 42, 0.07);
+        --shadow-md: 0 18px 50px rgba(15, 23, 42, 0.1);
+        --shadow-lg: 0 28px 90px rgba(15, 23, 42, 0.15);
+    }
+}
